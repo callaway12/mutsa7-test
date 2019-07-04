@@ -61,6 +61,11 @@ crossorigin="anonymous"></script>
                         <h1>{{ post.title }}</h1>
                         <p>{{ post.body }}</p>
                         <p>{{ post.pub_date }}</p>
+
+                        {% if post.pic %}
+                        <img src="{{ post.pic.url }}" width="240px" alt="">
+                        {% endif %}
+                        
                         <br>
                         </div>
                     </a>
