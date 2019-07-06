@@ -136,9 +136,7 @@ STATICFILES_DIRS = [
     STATIC_DIR,
 ]
 
-# AWS_ACCESS_KEY_ID = 'AKIA4ZFKCKNJZLC2XHML'
-# AWS_SECRET_ACCESS_KEY = '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'
-# AWS_STORAGE_BUCKET_NAME = 'mutsa7-test'
+
 
 config_secret = json.loads(open(CONFIG_SETTINGS_COMMON_FILE).read())
 AWS_ACCESS_KEY_ID = config_secret['aws']['access_key_id']
